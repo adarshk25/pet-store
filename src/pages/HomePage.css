@@ -1,35 +1,41 @@
-/* src/pages/HomePage.css */
+/* HomePage.css */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 .home {
-    background-image: url('/src/assets/background.jpg'); /* Add a background image */
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-  }
-  
-  .welcome h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-  }
-  
-  .shop-now {
-    margin-top: 20px;
-  }
-  
-  .shop-btn {
-    padding: 10px 20px;
-    background-color: #ff6b6b;
-    color: white;
-    font-size: 1.2rem;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  .shop-btn:hover {
-    background-color: #ff4a4a;
-  }
-  
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1; /* Takes up the remaining space */
+  text-align: center;
+  padding: 50px;
+}
+
+.welcome h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.welcome p {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+}
+
+.shop-btn {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.shop-btn:hover {
+  background-color: #ff4a4a;
+}
+

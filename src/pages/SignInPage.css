@@ -1,30 +1,161 @@
-/* src/pages/SignInPage.css */
+/* Base Styling for SignIn Page */
 .signin-page {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .signin-page form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    max-width: 300px;
-    margin: 0 auto;
-  }
-  
-  .signin-page input {
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  .signin-page button {
-    padding: 10px;
-    background-color: #ff6b6b;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.form-container {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+}
+
+.signin-page h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.signin-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.signin-page input {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border 0.3s;
+}
+
+.signin-page input:focus {
+  border-color: #ff6b6b;
+  outline: none;
+}
+
+.signin-page button {
+  padding: 12px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}
+
+.signin-page button:hover {
+  background-color: #ff4a4a;
+}
+
+/* Toggle Switch Styles */
+.role-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #ff6b6b;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.role-text {
+  font-size: 1.1rem;
+  margin-left: 15px;
+  color: #555;
+  font-weight: bold;
+}
+
+/* Social Sign-In Buttons */
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.google-btn, .mobile-btn {
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.google-btn {
+  background-color: #db4437; /* Google Red */
+  color: white;
+}
+
+.google-btn:hover {
+  background-color: #c1351d; /* Darker Red on hover */
+}
+
+.mobile-btn {
+  background-color: #34b7f1; /* Light blue for Mobile */
+  color: white;
+}
+
+.mobile-btn:hover {
+  background-color: #1c86c1; /* Darker Blue on hover */
+}
+
+/* Style for the icons */
+.social-icon {
+  font-size: 1.5rem;
+  color: white;
+}
