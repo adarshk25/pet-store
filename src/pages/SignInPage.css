@@ -1,0 +1,30 @@
+/* src/pages/SignInPage.css */
+.signin-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .signin-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .signin-page input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .signin-page button {
+    padding: 10px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
